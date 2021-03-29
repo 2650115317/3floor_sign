@@ -6,8 +6,7 @@ on:
   gollum:
   workflow_dispatch:
   
-   CRON_TZ=Asia/Shanghai TZ=Asia/Shanghai- cron: '0 9 * * *'
-
+    cron: '30 9 * * *'
  
 
 jobs:
