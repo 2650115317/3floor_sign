@@ -97,13 +97,6 @@ def server():
     if r.status_code == 200:
         print('[+]server酱已推送，请查收')
         
-def ppsend(PPKEY, message):
-
-    pp_url = 'http://pushplus.hxtrip.com/send?token={}&title=葫芦侠三楼签到通知！&content={}&template=html'.format(PPKEY, message)
-
-    if pp_enable:
-
-        r.get(url=pp_url)
 
 #钉钉消息推送
 def dingtalk():
